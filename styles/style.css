@@ -18,11 +18,15 @@
   flex-direction: row;
   gap: 32px;
   font-size: 18px;
+  line-height: 50%;
 }
 
 .header__links-list-item {
   color: #000;
-  line-height: 100%;
+}
+
+.header__links-list_item_active {
+  list-style-type: none;
 }
 
 .header__link_active {
@@ -31,10 +35,6 @@
 
 .header__links-list-item_no-bullit {
   list-style-type: circle;
-}
-
-.header__links-list-item_active {
-  list-style-type: none;
 }
 
 .address {
@@ -63,8 +63,7 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -228,6 +227,7 @@
   font-size: 20px;
   text-decoration: underline;
   text-underline-offset: 5px;
+  width: fit-content;
 }
 
 .about {
@@ -238,7 +238,6 @@
   display: grid;
   grid-template-columns: 334px 1fr;
   align-items: center;
-  height: 595px;
   padding-top: 35px;
   column-gap: 25px;
 }
@@ -263,6 +262,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
+  padding-top: 3px;
   text-transform: uppercase;
 }
 
@@ -277,6 +277,7 @@
   margin-right: 5px;
   margin-block-start: 0px;
   margin-block-end: 0px;
+  margin-top: 8px;
 }
 
 .about__text-text {
@@ -287,7 +288,7 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 180px;
+  padding-bottom: 82.82px;
   margin-top: 180px;
   text-underline-offset: 4px;
 }
