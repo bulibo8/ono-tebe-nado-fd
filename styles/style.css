@@ -295,7 +295,7 @@
   text-underline-offset: 5px;
 }
 
-.address__footer {
+.footer__address {
   justify-self: start;
   margin-left: 50px;
 }
