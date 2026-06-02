@@ -266,7 +266,6 @@
   color: #000000;
   font-weight: 700;
   font-size: 40px;
-  line-height: 100%;
   text-transform: uppercase;
 }
 
@@ -291,6 +290,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 180px;
+  padding-top: 1px;
   padding-bottom: 82.82px;
   text-underline-offset: 5px;
 }
