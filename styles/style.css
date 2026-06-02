@@ -6,13 +6,6 @@
   text-underline-offset: 4px;
 }
 
-.header__logo-image {
-  display: block;
-  justify-content: center;
-  width: 148px;
-  height: 105px;
-}
-
 .header__links-list {
   display: flex;
   flex-direction: row;
@@ -23,9 +16,6 @@
 
 .header__links-list-item {
   color: #000;
-}
-
-.header__links-list_item_active {
   list-style-type: none;
 }
 
@@ -35,6 +25,13 @@
 
 .header__links-list-item_no-bullit {
   list-style-type: circle;
+}
+
+.header__logo-image {
+  display: block;
+  justify-content: center;
+  width: 148px;
+  height: 105px;
 }
 
 .address {
@@ -85,8 +82,8 @@
   color: white;
   font-weight: 700;
   font-size: 100px;
-  text-transform: uppercase;
   line-height: 115%;
+  text-transform: uppercase;
 }
 
 .aligned-text {
@@ -117,10 +114,10 @@
 .cover__description {
   z-index: 2;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-top: 106px;
-  justify-content: space-between;
 }
 
 .cover__description-text {
@@ -175,13 +172,14 @@
 .card {
   display: block;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   background-position: center;
   background-size: cover;
 }
@@ -223,11 +221,11 @@
 
 .lots__look-more-link {
   display: block;
+  width: fit-content;
   margin: 30px 102px 0 40px;
   font-size: 20px;
   text-decoration: underline;
   text-underline-offset: 5px;
-  width: fit-content;
 }
 
 .about {
@@ -237,9 +235,8 @@
 .about__column {
   display: grid;
   grid-template-columns: 334px 1fr;
-  align-items: center;
-  padding-top: 35px;
   column-gap: 25px;
+  padding-top: 35px;
 }
 
 .about__logo {
@@ -257,12 +254,19 @@
   width: 148px;
 }
 
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 97px;
+}
+
 .about__title {
+  margin-top: 100px;
+  padding-top: 3px;
   color: #000000;
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
-  padding-top: 3px;
   text-transform: uppercase;
 }
 
@@ -274,23 +278,21 @@
 }
 
 .about__text-margin {
-  margin-right: 5px;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
   margin-top: 8px;
+  margin-right: 5px;
+  margin-block: 0px;
 }
 
 .about__text-text {
-  margin-block-start: 0px;
-  margin-block-end: 0px;
+  margin-block: 0px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding-bottom: 82.82px;
   margin-top: 180px;
-  text-underline-offset: 4px;
+  padding-bottom: 82.82px;
+  text-underline-offset: 5px;
 }
 
 .address__footer {
